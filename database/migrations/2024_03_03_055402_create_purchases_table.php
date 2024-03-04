@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('purchases', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->tinyInteger('supplier_id');
+            $table->integer('total_item');
+            $table->string('total_price');
+            $table->tinyInteger('discount')->default(0);
+            $table->integer('paid')->default(0);
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
