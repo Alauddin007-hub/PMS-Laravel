@@ -646,4 +646,18 @@
               </td>
               <td><span class="lable-table bg-success-subtle text-success rounded border border-success-subtle font-text2 fw-bold">Completed<i class="bi bi-check2 ms-2"></i></span></td>
               <td><span class="lable-table bg-danger-subtle text-danger rounded border border-danger-subtle font-text2 fw-bold">Failed<i class="bi bi-x-lg ms-2"></i></span></td>
-              <td>
+              <td>Cash on delivery</td>
+              <td>Nov 12, 10:45 PM</td>
+            </tr> 
+           </tbody>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</main>
+<!--end main content-->
+
+@endsection
