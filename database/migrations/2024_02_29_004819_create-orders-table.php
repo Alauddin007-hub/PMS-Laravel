@@ -13,12 +13,11 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->tinyInteger('product_id');
-            $table->string('quantity');
-            $table->string('subtotal');
-            // $table->string('discount');
-            $table->string('total');
-            $table->boolean('status')->default(0);
+            $table->integer('totalamount');
+            $table->integer('customer_id');
+            $table->integer('coupon_discount');
+            $table->string('status')->default("Pending");
+            $table->string('payment_method');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent(); 
         });
